@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: ShopCommon
+server:
+  port: 8081

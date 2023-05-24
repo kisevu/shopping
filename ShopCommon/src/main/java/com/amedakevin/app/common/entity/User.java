@@ -13,6 +13,8 @@ import java.util.Set;
 @Getter
 @Setter
 @Builder
+@ToString
+@EqualsAndHashCode
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -10,8 +10,6 @@ import lombok.*;
 @Getter
 @Setter
 @Builder
-@ToString
-@EqualsAndHashCode
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,4 +18,7 @@ public class Role {
     private String name;
     @Column(length = 150,nullable = false)
     private String description;
+    public String toString(){
+        return this.name;
+    }
 }

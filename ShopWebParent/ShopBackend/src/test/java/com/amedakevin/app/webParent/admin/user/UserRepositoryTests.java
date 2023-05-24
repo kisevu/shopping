@@ -39,16 +39,16 @@ public class UserRepositoryTests {
     }
     @Test
     public void testCreateUserWithTwoRoles(){
-        Role roleSalesPerson=entityManager.find(Role.class,2);
-        Role roleAssistant=entityManager.find(Role.class,5);
-        User userGitau=User.builder()
-                .email("paulgitau@gmail.com")
-                .password("gitau")
-                .firstName("Paul")
-                .lastName("Gitau")
-                .roles(Set.of(roleSalesPerson,roleAssistant))
+        Role roleSalesEditor=entityManager.find(Role.class,3);
+        Role roleShipper=entityManager.find(Role.class,4);
+        User userOmbeva=User.builder()
+                .email("oscarkisala@gmail.com")
+                .password("kisala")
+                .firstName("Oscar")
+                .lastName("Kisala")
+                .roles(Set.of(roleSalesEditor,roleShipper))
                 .build();
-        User savedUser=userRepository.save(userGitau);
+        User savedUser=userRepository.save(userOmbeva);
         assertThat(savedUser.getUserId()).isGreaterThan(0);
     }
     @Test

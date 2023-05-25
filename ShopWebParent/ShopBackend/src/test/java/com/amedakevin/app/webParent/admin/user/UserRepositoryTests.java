@@ -2,7 +2,6 @@ package com.amedakevin.app.webParent.admin.user;
 
 import com.amedakevin.app.common.entity.Role;
 import com.amedakevin.app.common.entity.User;
-import org.assertj.core.util.Sets;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
